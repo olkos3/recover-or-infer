@@ -1,0 +1,211 @@
+REVOLVING CREDIT AGREEMENT
+
+(FICTIONAL SAMPLE DOCUMENT FOR DEMONSTRATION ONLY. ALL NAMES, AMOUNTS AND TERMS ARE INVENTED.)
+
+dated as of March 3, 2025
+
+among
+
+NORTHWIND FABRICATION, INC.,
+as Borrower,
+
+THE LENDERS PARTY HERETO
+
+and
+
+HARBOR STREET BANK, N.A.,
+as Administrative Agent
+
+TABLE OF CONTENTS
+
+ARTICLE I DEFINITIONS AND INTERPRETATION 1
+Section 1.1 Defined Terms 1
+Section 1.2 Interpretation 3
+ARTICLE II THE COMMITMENTS 3
+Section 2.1 Revolving Loans 3
+Section 2.2 Maximum Facility Amount 4
+Section 2.3 Incremental Commitments 4
+Section 2.4 Swingline Loans 5
+ARTICLE III INTEREST AND FEES 5
+Section 3.1 Interest Rates 5
+Section 3.2 Commitment Fee 6
+Section 3.3 Default Interest 6
+ARTICLE IV PREPAYMENTS 6
+Section 4.1 Voluntary Prepayments 6
+Section 4.2 Mandatory Prepayments 7
+Section 4.3 Prepayment Premium 7
+ARTICLE V REPRESENTATIONS AND WARRANTIES 8
+ARTICLE VI COVENANTS 8
+Section 6.1 Financial Covenants 8
+Section 6.2 Negative Covenants 9
+ARTICLE VII EVENTS OF DEFAULT 10
+Section 7.1 Events of Default 10
+Section 7.2 Grace Periods and Cure Rights 11
+Section 7.3 Remedies 12
+ARTICLE VIII THE ADMINISTRATIVE AGENT 12
+ARTICLE IX MISCELLANEOUS 13
+
+This REVOLVING CREDIT AGREEMENT (this "Agreement") is entered into as of March 3, 2025, among Northwind Fabrication, Inc., a Delaware corporation (the "Borrower"), the lenders from time to time party hereto (the "Lenders") and Harbor Street Bank, N.A., as administrative agent for the Lenders (in such capacity, the "Administrative Agent").
+
+The Borrower has requested that the Lenders make available a revolving credit facility, and the Lenders are willing to do so on the terms and subject to the conditions set forth herein. Accordingly, the parties agree as follows:
+
+ARTICLE I
+DEFINITIONS AND INTERPRETATION
+
+Section 1.1 Defined Terms.
+
+As used in this Agreement, the following terms have the meanings specified below:
+
+"Applicable Margin" means, for any day, 1.75% per annum for Term SOFR Loans and 0.75% per annum for Base Rate Loans, in each case subject to adjustment under Section 3.1(c).
+
+"Availability Period" means the period from the Closing Date to but excluding the Maturity Date.
+
+"Base Rate" means, for any day, the highest of (a) the Prime Rate in effect on such day, (b) the Federal Funds Effective Rate in effect on such day plus 0.50% and (c) Term SOFR for a one-month interest period plus 1.00%.
+
+"Business Day" means any day other than a Saturday, Sunday or other day on which commercial banks in New York City are authorized or required by law to close.
+
+"Closing Date" means the date on which the conditions precedent in Article V are satisfied or waived.
+
+"Commitment" means, for each Lender, its obligation to make Revolving Loans in an aggregate principal amount at any time outstanding not to exceed the amount set forth opposite its name on Schedule 2.1, as such amount may be reduced or increased under this Agreement.
+
+"Consolidated EBITDA" means, for any period, consolidated net income of the Borrower and its Subsidiaries plus, to the extent deducted in computing such net income, interest expense, income taxes, depreciation and amortization, and non-cash charges, minus non-cash gains.
+
+"Consolidated Leverage Ratio" means, as of the last day of any fiscal quarter, the ratio of Consolidated Total Debt on such day to Consolidated EBITDA for the four fiscal quarters then ended.
+
+"Default" means any event or condition that, with the giving of notice, the lapse of time or both, would constitute an Event of Default.
+
+"Interest Coverage Ratio" means, for any period of four fiscal quarters, the ratio of Consolidated EBITDA to consolidated cash interest expense for such period.
+
+"Maturity Date" means March 3, 2030.
+
+"Material Adverse Effect" means a material adverse effect on (a) the business, assets, operations or financial condition of the Borrower and its Subsidiaries taken as a whole, (b) the ability of the Borrower to perform its payment obligations under this Agreement or (c) the rights and remedies of the Administrative Agent or the Lenders.
+
+"Required Lenders" means Lenders holding more than 50% of the aggregate Commitments or, after their termination, of the outstanding Revolving Loans.
+
+"Subsidiary" means any corporation, partnership or other entity of which more than 50% of the voting equity is owned, directly or indirectly, by the Borrower.
+
+Section 1.2 Interpretation.
+
+Unless the context requires otherwise, references to Articles and Sections are to articles and sections of this Agreement, the word "including" means "including without limitation", and accounting terms not otherwise defined have the meanings given to them under generally accepted accounting principles in the United States, applied consistently.
+
+ARTICLE II
+THE COMMITMENTS
+
+Section 2.1 Revolving Loans.
+
+Subject to the terms and conditions of this Agreement, each Lender severally agrees to make revolving loans (the "Revolving Loans") to the Borrower from time to time during the Availability Period in an aggregate principal amount that will not result in such Lender's outstanding Revolving Loans exceeding its Commitment. Within these limits the Borrower may borrow, prepay and reborrow Revolving Loans. Each borrowing shall be in a minimum amount of $1,000,000 and integral multiples of $500,000 in excess thereof.
+
+Section 2.2 Maximum Facility Amount.
+
+The aggregate Commitments on the Closing Date are $250,000,000. At no time shall the aggregate outstanding Revolving Loans and Swingline Loans exceed the aggregate Commitments then in effect (the "Maximum Facility Amount"). If on any day the outstanding Revolving Loans and Swingline Loans exceed the Maximum Facility Amount, the Borrower shall prepay loans in the amount of the excess within one Business Day.
+
+Section 2.3 Incremental Commitments.
+
+The Borrower may, by written notice to the Administrative Agent, request increases in the aggregate Commitments in minimum amounts of $10,000,000, provided that (a) the aggregate amount of all such increases shall not exceed $100,000,000, (b) no Default or Event of Default exists at the time of the request or would result from the increase, and (c) no Lender shall be obliged to increase its Commitment. After giving effect to all increases, the Maximum Facility Amount may therefore reach $350,000,000.
+
+Section 2.4 Swingline Loans.
+
+Harbor Street Bank, N.A. (in such capacity, the "Swingline Lender") may in its discretion make swingline loans to the Borrower in an aggregate principal amount at any time outstanding not to exceed $20,000,000 (the "Swingline Sublimit"). Each Swingline Loan shall be repaid on the earlier of the tenth Business Day after it is made and the Maturity Date. Swingline Loans reduce the availability under the Commitments on a dollar-for-dollar basis.
+
+ARTICLE III
+INTEREST AND FEES
+
+Section 3.1 Interest Rates.
+
+(a) Each Term SOFR Loan shall bear interest at Term SOFR for the applicable interest period plus the Applicable Margin.
+
+(b) Each Base Rate Loan and each Swingline Loan shall bear interest at the Base Rate plus the Applicable Margin.
+
+(c) If the Consolidated Leverage Ratio as of the end of any fiscal quarter is less than 2.00 to 1.00, the Applicable Margin shall be reduced by 0.25% per annum from the fifth Business Day after the financial statements for such quarter are delivered.
+
+Section 3.2 Commitment Fee.
+
+The Borrower shall pay to the Administrative Agent, for the account of each Lender, a commitment fee at the rate of 0.25% per annum on the daily unused amount of such Lender's Commitment, payable quarterly in arrears on the last Business Day of each March, June, September and December.
+
+Section 3.3 Default Interest.
+
+While any Event of Default under Section 7.1(a) or Section 7.1(f) exists, all overdue amounts shall bear interest at a rate per annum equal to 2.00% above the rate otherwise applicable. Default interest under this Section 3.3 shall not accrue during any grace period under Section 7.2.
+
+ARTICLE IV
+PREPAYMENTS
+
+Section 4.1 Voluntary Prepayments.
+
+The Borrower may prepay Revolving Loans in whole or in part at any time without premium or penalty, except as provided in Section 4.3, upon notice to the Administrative Agent given not later than 11:00 a.m. one Business Day before the date of prepayment. Each partial prepayment shall be in a minimum amount of $1,000,000.
+
+Section 4.2 Mandatory Prepayments.
+
+(a) Asset sales. If the Borrower or any Subsidiary receives net cash proceeds from any sale of assets outside the ordinary course of business exceeding $15,000,000 in any fiscal year, the Borrower shall prepay Revolving Loans in an amount equal to such excess within ten Business Days, unless such proceeds are reinvested in assets useful in the business within 270 days.
+
+(b) Debt issuance. If the Borrower incurs indebtedness not permitted by Section 6.2, it shall prepay Revolving Loans in an amount equal to 100% of the net cash proceeds on the date of receipt.
+
+(c) Commitments are not reduced by mandatory prepayments under this Section 4.2 unless the Required Lenders so elect.
+
+Section 4.3 Prepayment Premium.
+
+Any voluntary prepayment made in connection with a refinancing of the facility before the first anniversary of the Closing Date shall be accompanied by a premium of 1.00% of the amount prepaid. No premium is payable on prepayments made from internally generated cash, on mandatory prepayments under Section 4.2, or on prepayments made after the first anniversary of the Closing Date.
+
+ARTICLE V
+REPRESENTATIONS AND WARRANTIES
+
+The Borrower represents and warrants to the Lenders that (a) it is duly organized and in good standing under the laws of the State of Delaware, (b) the execution and performance of this Agreement are within its corporate powers and have been duly authorized, (c) its audited financial statements for the fiscal year ended December 31, 2024 fairly present its consolidated financial condition, (d) since December 31, 2024 there has been no Material Adverse Effect, and (e) no litigation is pending or threatened that could reasonably be expected to have a Material Adverse Effect.
+
+ARTICLE VI
+COVENANTS
+
+Section 6.1 Financial Covenants.
+
+(a) Maximum Consolidated Leverage Ratio. The Borrower shall not permit the Consolidated Leverage Ratio as of the last day of any fiscal quarter to exceed 3.50 to 1.00; provided that, for the four fiscal quarters following a permitted acquisition with consideration above $50,000,000, the maximum shall be 4.00 to 1.00.
+
+(b) Minimum Interest Coverage Ratio. The Borrower shall not permit the Interest Coverage Ratio for any period of four consecutive fiscal quarters to be less than 3.00 to 1.00.
+
+Section 6.2 Negative Covenants.
+
+The Borrower shall not, and shall not permit any Subsidiary to, (a) incur indebtedness other than under this Agreement and other indebtedness in an aggregate principal amount not exceeding $40,000,000, (b) create liens on its assets other than customary permitted liens and liens securing indebtedness permitted under clause (a), (c) merge into or consolidate with any other person unless the Borrower is the surviving entity and no Default would result, or (d) pay dividends in any fiscal year exceeding 50% of consolidated net income for the prior fiscal year while the Consolidated Leverage Ratio exceeds 3.00 to 1.00.
+
+ARTICLE VII
+EVENTS OF DEFAULT
+
+Section 7.1 Events of Default.
+
+Each of the following is an "Event of Default":
+
+(a) the Borrower fails to pay any principal of any loan when due, or fails to pay any interest, fee or other amount within the grace period set out in Section 7.2(a);
+
+(b) any representation or warranty made by the Borrower proves to have been incorrect in any material respect when made;
+
+(c) the Borrower fails to observe any covenant in Section 6.1, subject to the cure right in Section 7.2(c);
+
+(d) the Borrower fails to observe any other covenant in this Agreement and the failure continues for the period set out in Section 7.2(b);
+
+(e) the Borrower or any Subsidiary fails to pay indebtedness (other than under this Agreement) with a principal amount exceeding $25,000,000 when due, or any such indebtedness is accelerated;
+
+(f) the Borrower or any material Subsidiary becomes subject to bankruptcy or insolvency proceedings, which in the case of involuntary proceedings are not dismissed within 60 days;
+
+(g) one or more final judgments for the payment of money exceeding $25,000,000 in the aggregate (to the extent not covered by insurance) are rendered against the Borrower and remain unsatisfied and unstayed for 45 consecutive days; or
+
+(h) a Change of Control occurs.
+
+Section 7.2 Grace Periods and Cure Rights.
+
+(a) Payment grace period. A failure to pay interest, fees or any amount other than principal is an Event of Default only if it continues for three Business Days after its due date. A failure to pay principal caused solely by an administrative or technical error is not an Event of Default if it is remedied within two Business Days after the Borrower becomes aware of it.
+
+(b) Covenant cure period. A failure to observe a covenant other than those in Sections 6.1 and 6.2(c) is an Event of Default only if it continues unremedied for 30 days after the earlier of the Borrower's knowledge of the failure and written notice from the Administrative Agent.
+
+(c) Equity cure. If the Borrower fails to comply with Section 6.1 for any fiscal quarter, it may within 15 Business Days after the delivery of the relevant compliance certificate receive a cash equity contribution, which shall be added to Consolidated EBITDA for that quarter for the purpose of recalculating compliance. The equity cure may be used in no more than two fiscal quarters in any period of four consecutive fiscal quarters and no more than four times during the life of the facility, and the amount added shall not exceed the amount required to restore compliance.
+
+(d) Materiality thresholds. Defaults under Section 7.1(e) and Section 7.1(g) apply only above the stated $25,000,000 thresholds, which shall be measured on an aggregate basis.
+
+Section 7.3 Remedies.
+
+If an Event of Default occurs and is continuing, the Administrative Agent may, and at the request of the Required Lenders shall, (a) terminate the Commitments, (b) declare the outstanding loans, accrued interest and all other obligations immediately due and payable, and (c) exercise all other rights and remedies available under this Agreement and applicable law; provided that upon an Event of Default under Section 7.1(f) the Commitments terminate and all obligations become due automatically, without notice or any other action.
+
+ARTICLE VIII
+THE ADMINISTRATIVE AGENT
+
+Each Lender irrevocably appoints Harbor Street Bank, N.A. as Administrative Agent and authorizes it to take such actions on its behalf and to exercise such powers as are delegated to the Administrative Agent by this Agreement. The Administrative Agent shall not have any duties or responsibilities except those expressly set forth herein, shall not be liable for any action taken or omitted in the absence of its own gross negligence or willful misconduct, and may resign upon 30 days' notice to the Lenders and the Borrower, in which case the Required Lenders shall appoint a successor.
+
+ARTICLE IX
+MISCELLANEOUS
+
+Notices shall be in writing and delivered to the addresses set out on Schedule 9.1. No amendment or waiver of any provision of this Agreement shall be effective unless in writing and signed by the Borrower and the Required Lenders, except that any increase of a Lender's Commitment, reduction of principal or interest, or extension of the Maturity Date requires the consent of each Lender affected. This Agreement is governed by the law of the State of New York. Each party irrevocably submits to the non-exclusive jurisdiction of the state and federal courts located in the Borough of Manhattan and waives any right to trial by jury.

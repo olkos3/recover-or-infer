@@ -1,0 +1,30 @@
+maud/Bryn Mawr Bank Corporation_WSFS Financial Corporation.txt
+maud/Pandion Therapeutics, Inc._Merck _ Co., Inc..txt
+maud/Protective Insurance Corporation_The Progressive Corporation.txt
+maud/Dicerna_Pharmaceuticals_Inc_Novo_Nordisk_A_S.txt
+maud/FLIR Systems, Inc._Teledyne Technologies Incorporated.txt
+maud/HMS Holdings Corp._Veritas Capital.txt
+maud/Nuance Communications, Inc._Microsoft Corporation.txt
+maud/National General Holdings Corp._The Allstate Corporation.txt
+maud/Slack Technologies, Inc._salesforce.com, inc..txt
+maud/Misonix_Inc_Bioventus_Inc.txt
+maud/Raven Industries, Inc._CNH Industrial N.V..txt
+maud/U.S. Concrete, Inc._Vulcan Materials Company.txt
+maud/Flagstar Bancorp, Inc._New York Community Bancorp, Inc..txt
+maud/CIT Group Inc._First Citizens BancShares, Inc..txt
+maud/Sykes Enterprises, Incorporated_CREADEV.txt
+maud/NIC Inc._Tyler Technologies, Inc..txt
+maud/CAI International, Inc._Mitsubishi HC Capital Inc..txt
+maud/MTS Systems Corporation_Amphenol Corporation.txt
+maud/Covanta_Holding_Corporation_EQT_Holdings_AB.txt
+maud/Mackinac Financial Corporation_Nicolet Bankshares, Inc..txt
+maud/J_Alexander_s_Holdings_Inc_SPB_Hospitality_LLC.txt
+maud/Stamps_com_Inc_Thoma_Bravo_L_P.txt
+maud/Alaska Communications Systems Group, Inc._Investment Group.txt
+maud/Coherent, Inc._II-VI Incorporated.txt
+maud/Adamas_Pharmaceuticals_Supernus_Pharmaceuticals.txt
+maud/Cincinnati Bell Inc._Macquarie Infrastructure and Real Assets.txt
+maud/Extraction Oil _ Gas, Inc._Bonanza Creek Energy, Inc..pdf||Extraction Oil Gas, Inc. Bonanza Creek Energy Amendment No.1.txt
+maud/Kindred Biosciences, Inc._Elanco Animal Health Incorporated.pdf||Kindred_Biosciences_Inc_Elanco_Animal_Health_Incorporated Amendment No.1.txt
+maud/ORBCOMM Inc._GI Partners.txt
+maud/Sterling_Bancorp_Webster_Financial_Corporation.txt
