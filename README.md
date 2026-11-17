@@ -15,7 +15,7 @@ Fixed-size chunking cuts a long document into passages that no longer say which 
 
 Both routes produce a section tree, and both feed the same retriever:
 
-- Chunks of at most 350 tokens never cross a section, and each carries its **breadcrumb** (e.g. `ARTICLE VII EVENTS OF DEFAULT > Section 7.2 Grace Periods and Cure Rights`).
+- Chunks of at most 350 tokens respect section boundaries, after sections shorter than 150 tokens have been merged with a neighbour. Each chunk carries its **breadcrumb** (e.g. `ARTICLE VII EVENTS OF DEFAULT > Section 7.2 Grace Periods and Cure Rights`).
 - The breadcrumb is embedded together with the chunk text, so a chunk that starts mid-clause still carries the topic of its section.
 - Three ranked lists are fused by reciprocal rank fusion: dense over *breadcrumb + text*, BM25 over breadcrumbs, and BM25 over text. A cross-encoder then reranks the top 50.
 

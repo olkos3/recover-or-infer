@@ -1,4 +1,4 @@
-"""Section-aware chunking (v4): chunks never cross a leaf section and carry the leaf's breadcrumb.
+"""Section-aware chunking (v4): chunks respect leaf boundaries (after short leaves are merged) and carry the breadcrumb.
 
 - A leaf of T tokens is cut into ceil(T/350) pieces of about equal size (no short tail), cuts snapped to line breaks.
 - Leaves under 150 tokens are packed with a neighbour; the merged breadcrumb joins their titles.
