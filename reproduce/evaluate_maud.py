@@ -23,7 +23,7 @@ from recover_or_infer import OpenAIClient, StructureIndex, paginate
 
 HERE = Path(__file__).resolve().parent
 ARCHIVE_SHA256 = "27431be37db9b1db23f8ab790a42d076adb1f72d7f9e7562e36a10573405f88d"
-PAPER = {"flat": (48.4, 77.3), "toc": (61.4, 85.1), "no_toc": (59.2, 83.6)}   # Table 3 of the paper: R@2k, R@8k
+PAPER = {"flat": (48.4, 77.3), "toc": (61.4, 85.1), "no_toc": (59.2, 83.6)}   # Table 2 of the paper: R@2k, R@8k
 
 
 def strip_prefix(query):

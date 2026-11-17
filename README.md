@@ -2,6 +2,12 @@
 
 Zero-shot document structure for retrieval over long documents. This is a reference implementation of the paper *Recover or Infer: Zero-Shot Document Structure for Retrieval over Long Documents* (Vadym Soroka, 2026).
 
+> **About this code.** This is a compact re-implementation of the method, written for clarity and reuse. It follows the paper's algorithm and frozen parameters, but it is **not the research code that produced the paper's numbers**.
+>
+> In a check against the paper's frozen runs on the same agreements, the flat baseline reproduced the per-document results exactly. The ToC and no-ToC routes differed per document by a few points in both directions. Their structure comes from LLM calls, which are not deterministic, and the research code handles some edge cases this version omits ([details](reproduce/README.md#4-what-to-expect)).
+>
+> The frozen protocols and per-query results of the paper's experiments are available from the author on request.
+
 Fixed-size chunking cuts a long document into passages that no longer say which section they belong to. Contextual retrieval fixes this with one LLM call per chunk. This method instead gives every chunk the document's own structure, with a few LLM calls per document:
 
 - **ToC route.** If the document has a table of contents, a small LLM finds it and extracts the entries. Each entry is then aligned to the page and offset where its body heading starts.

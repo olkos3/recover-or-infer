@@ -41,7 +41,7 @@ The output gives the document-averaged recall of each method next to the paper's
 
 ## 4. What to expect
 
-The paper's values (Table 3) are:
+The paper's values (Table 2) are:
 
 | Method | R@2k | R@8k |
 |---|---:|---:|
