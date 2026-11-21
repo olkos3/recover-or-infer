@@ -1,6 +1,6 @@
 # Recover or Infer
 
-Zero-shot document structure for retrieval over long documents. This is a reference implementation of the paper *Recover or Infer: Zero-Shot Document Structure for Retrieval over Long Documents* (Vadym Soroka, 2026).
+Training-free document structure for retrieval over long documents. This is a reference implementation of the paper *Recover or Infer: Training-Free Document Structure for Retrieval over Long Documents* (Vadym Soroka, 2026).
 
 > **About this code.** This is a compact re-implementation of the method, written for clarity and reuse. It follows the paper's algorithm and frozen parameters, but it is **not the research code that produced the paper's numbers**.
 >
@@ -85,7 +85,7 @@ Indexing cost: 39× fewer LLM calls than contextual retrieval on the merger agre
 
 ```bibtex
 @misc{soroka2026recover,
-  title  = {Recover or Infer: Zero-Shot Document Structure for Retrieval over Long Documents},
+  title  = {Recover or Infer: Training-Free Document Structure for Retrieval over Long Documents},
   author = {Soroka, Vadym},
   year   = {2026},
   url    = {https://github.com/olkos3/recover-or-infer}

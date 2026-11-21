@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "recover-or-infer"
 version = "0.1.0"
-description = "Zero-shot document structure (recovered ToC or inferred sections) for retrieval over long documents"
+description = "Training-free document structure (recovered ToC or inferred sections) for retrieval over long documents"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Vadym Soroka" }]

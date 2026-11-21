@@ -1,4 +1,4 @@
-"""Recover or Infer: zero-shot document structure for retrieval over long documents (reference implementation)."""
+"""Recover or Infer: training-free document structure for retrieval over long documents (reference implementation)."""
 from .config import Config
 from .llm import OpenAIClient
 from .pipeline import StructureIndex
