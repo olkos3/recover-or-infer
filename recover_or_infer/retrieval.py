@@ -1,9 +1,11 @@
-"""Retrieval over one document: dense + BM25 lists fused by reciprocal rank fusion, cross-encoder reranking, budget fill.
+"""Retrieval over one document: candidate ranking, cross-encoder reranking, budget fill.
 
-Structure index (three lists): dense cosine over embeddings of "breadcrumb\\nchunk text", BM25 over breadcrumbs
-alone, BM25 over chunk text alone. Flat baseline (two lists): dense over chunk text, BM25 over chunk text.
-The top 50 fused candidates are reranked by a cross-encoder that sees "breadcrumb\\nchunk text". The context is filled
-in rank order up to a budget of raw chunk-text tokens; breadcrumbs are not counted.
+Two candidate rankings (Config.fusion):
+- "dense" (default, the configuration the paper recommends): dense cosine over embeddings of "breadcrumb\\nchunk text".
+- "three_list" (the configuration of the paper's frozen runs): reciprocal rank fusion of that dense list, BM25 over
+  breadcrumbs alone and BM25 over chunk text alone. Flat baseline: dense over chunk text and BM25 over chunk text.
+The top 50 candidates are reranked by a cross-encoder that sees "breadcrumb\\nchunk text". The context is filled in
+rank order up to a budget of raw chunk-text tokens; breadcrumbs are not counted, although an answerer is shown them.
 """
 import math
 import re
@@ -41,13 +43,22 @@ class BM25:
 class Index:
     def __init__(self, chunks, llm, cfg, structured=True):
         self.chunks, self.llm, self.cfg, self.structured = chunks, llm, cfg, structured
+        if cfg.fusion not in ("dense", "three_list"):
+            raise ValueError(f"Unknown fusion: {cfg.fusion}")
         self.vectors = llm.embed([with_breadcrumb(c) for c in chunks])
-        self.lexical = [BM25([" > ".join(c["path"]) for c in chunks]), BM25([c["text"] for c in chunks])] if structured \
-            else [BM25([c["text"] for c in chunks])]
+        if cfg.fusion == "dense":
+            self.lexical = []
+        elif structured:
+            self.lexical = [BM25([" > ".join(c["path"]) for c in chunks]), BM25([c["text"] for c in chunks])]
+        else:
+            self.lexical = [BM25([c["text"] for c in chunks])]
 
     def fused(self, query):
-        """Chunk indices ordered by reciprocal rank fusion of the dense and BM25 lists."""
-        lists = [(self.vectors @ self.llm.embed([query])[0], False)] + [(np.asarray(b.scores(query)), True) for b in self.lexical]
+        """Chunk indices, best first: by dense cosine ("dense") or by reciprocal rank fusion of the dense and BM25 lists."""
+        dense = self.vectors @ self.llm.embed([query])[0]
+        if self.cfg.fusion == "dense":
+            return sorted(range(len(self.chunks)), key=lambda i: (-float(dense[i]), self.chunks[i]["id"]))
+        lists = [(dense, False)] + [(np.asarray(b.scores(query)), True) for b in self.lexical]
         fused = np.zeros(len(self.chunks))
         for scores, sparse in lists:
             order = sorted(range(len(self.chunks)), key=lambda i: (-float(scores[i]), self.chunks[i]["id"]))

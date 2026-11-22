@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "recover-or-infer"
-version = "0.1.0"
+version = "0.2.0"
 description = "Training-free document structure (recovered ToC or inferred sections) for retrieval over long documents"
 readme = "README.md"
 license = { text = "MIT" }

@@ -8,6 +8,9 @@ intervals over documents (10,000 resamples, seed 42).
 
     python reproduce/evaluate_maud.py --archive path/to/legalbenchrag.zip                # the paper's 30 agreements
     python reproduce/evaluate_maud.py --archive path/to/legalbenchrag.zip --limit 3      # a quick check
+
+The paper's Table 2 used three-list fusion (dense + BM25 over breadcrumbs + BM25 over text), so that is the default
+here (--fusion three_list); --fusion dense runs the recommended dense + reranker configuration instead.
 """
 import argparse
 import hashlib
@@ -19,7 +22,7 @@ from pathlib import Path
 
 import numpy as np
 
-from recover_or_infer import OpenAIClient, StructureIndex, paginate
+from recover_or_infer import Config, OpenAIClient, StructureIndex, paginate
 
 HERE = Path(__file__).resolve().parent
 ARCHIVE_SHA256 = "27431be37db9b1db23f8ab790a42d076adb1f72d7f9e7562e36a10573405f88d"
@@ -93,6 +96,8 @@ def main():
     a.add_argument("--budgets", nargs="+", type=int, default=[2000, 8000])
     a.add_argument("--reranker-dir", default="models/jina_v2_base", help="downloaded on first use")
     a.add_argument("--no-rerank", action="store_true")
+    a.add_argument("--fusion", default="three_list", choices=["three_list", "dense"],
+                   help="three_list (default) reproduces Table 2; dense is the recommended configuration (Table 7)")
     a.add_argument("--out", default="reproduce/maud_results.json")
     x = a.parse_args()
 
@@ -111,7 +116,7 @@ def main():
         pages = paginate(d["text"])
         mapper = to_joined(pages)
         for m in x.methods:
-            index = StructureIndex(pages, llm, route=m, doc_id=d["file"])
+            index = StructureIndex(pages, llm, route=m, doc_id=d["file"], config=Config(fusion=x.fusion))
             for b in x.budgets:
                 r = [recall(index.search(q["text"], budget=b, reranker=reranker), q["gold"], mapper) for q in d["queries"]]
                 per_doc[(m, b)][d["file"]] = float(np.mean(r))
@@ -123,7 +128,7 @@ def main():
     for m in x.methods:
         cells = []
         for k, b in enumerate(x.budgets):
-            paper = PAPER.get(m, (None, None))[k] if b in (2000, 8000) else None
+            paper = PAPER.get(m, (None, None))[k] if b in (2000, 8000) and x.fusion == "three_list" else None
             cells.append(f"{100 * np.mean(list(per_doc[(m, b)].values())):5.1f} ({paper if paper is not None else '-':>4})   ")
         print(f"{m:<11} " + "".join(cells))
     if "flat" in x.methods:

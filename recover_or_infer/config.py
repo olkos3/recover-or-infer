@@ -26,8 +26,12 @@ class Config:
     table_min_run_lines: int = 4       # table-like line runs removed from label excerpts
     table_short_line_max_words: int = 4
 
+    # Cascade: headings read off the text are used when the pattern finds at least this many
+    min_headings: int = 10
+
     # Retrieval
-    rrf_constant: int = 60
-    candidate_depth: int = 100         # each ranked list contributes its top 100 to reciprocal rank fusion
-    rerank_top: int = 50               # the cross-encoder reorders the top 50 fused candidates
+    fusion: str = "dense"              # "dense": dense + reranker (recommended); "three_list": the frozen runs' fusion
+    rrf_constant: int = 60             # three_list only
+    candidate_depth: int = 100         # three_list only: each ranked list contributes its top 100 to the fusion
+    rerank_top: int = 50               # the cross-encoder reorders the top 50 candidates
     reranker_max_tokens: int = 512
