@@ -2,8 +2,9 @@
 
 Two candidate rankings (Config.fusion):
 - "dense" (default, the configuration the paper recommends): dense cosine over embeddings of "breadcrumb\\nchunk text".
-- "three_list" (the configuration of the paper's frozen runs): reciprocal rank fusion of that dense list, BM25 over
-  breadcrumbs alone and BM25 over chunk text alone. Flat baseline: dense over chunk text and BM25 over chunk text.
+- "three_list" (the configuration of the paper's earlier frozen comparisons): reciprocal rank fusion of that dense
+  list, BM25 over breadcrumbs alone and BM25 over chunk text alone. Flat baseline: dense over chunk text and BM25
+  over chunk text.
 The top 50 candidates are reranked by a cross-encoder that sees "breadcrumb\\nchunk text". The context is filled in
 rank order up to a budget of raw chunk-text tokens; breadcrumbs are not counted, although an answerer is shown them.
 """

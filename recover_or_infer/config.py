@@ -30,7 +30,7 @@ class Config:
     min_headings: int = 10
 
     # Retrieval
-    fusion: str = "dense"              # "dense": dense + reranker (recommended); "three_list": the frozen runs' fusion
+    fusion: str = "dense"              # "dense": dense + reranker (recommended); "three_list": the earlier frozen comparisons' fusion
     rrf_constant: int = 60             # three_list only
     candidate_depth: int = 100         # three_list only: each ranked list contributes its top 100 to the fusion
     rerank_top: int = 50               # the cross-encoder reorders the top 50 candidates

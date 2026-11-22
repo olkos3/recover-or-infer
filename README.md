@@ -23,7 +23,7 @@ Every route produces a section tree, and all feed the same retriever:
 - Chunks of at most 350 tokens respect section boundaries, after sections shorter than 150 tokens have been merged with a neighbour. Each chunk carries its **breadcrumb** (e.g. `ARTICLE VII EVENTS OF DEFAULT > Section 7.2 Grace Periods and Cure Rights`).
 - The breadcrumb is embedded together with the chunk text, so a chunk that starts mid-clause still carries the topic of its section.
 - Dense retrieval over *breadcrumb + text* takes the top 50 chunks, and a cross-encoder reranks them. This is the configuration the paper recommends (`Config.fusion = "dense"`, the default).
-- The paper's frozen runs instead fused three ranked lists by reciprocal rank fusion: dense, BM25 over breadcrumbs and BM25 over text. It is available as `Config(fusion="three_list")` and is what reproduces the paper's earlier tables; the paper's post-hoc and fresh-holdout results show the BM25 lists can be dropped.
+- The paper's earlier frozen comparisons (all before its fifth credit holdout) instead fused three ranked lists by reciprocal rank fusion: dense, BM25 over breadcrumbs and BM25 over text. It is available as `Config(fusion="three_list")` and is what reproduces the paper's earlier tables; the paper's post-hoc and fresh-holdout results show the BM25 lists can be dropped.
 
 ```
 document ──► ToC found? ──yes──────────────────────► recover + align ToC ──┐
@@ -61,7 +61,7 @@ chunks = index.search("Which events of default have grace periods?", budget=2000
 print(StructureIndex.format_context(chunks))               # numbered excerpts under their breadcrumbs
 ```
 
-`route` can be `"auto"` (the cascade), `"toc"`, `"headings"`, `"no_toc"` or `"flat"` (the baseline). Retrieval is dense + reranker by default; pass `config=Config(fusion="three_list")` for the frozen runs' fusion. Every parameter of the paper is fixed in [`recover_or_infer/config.py`](recover_or_infer/config.py).
+`route` can be `"auto"` (the cascade), `"toc"`, `"headings"`, `"no_toc"` or `"flat"` (the baseline). Retrieval is dense + reranker by default; pass `config=Config(fusion="three_list")` for the fusion of the paper's earlier frozen comparisons. Every parameter of the paper is fixed in [`recover_or_infer/config.py`](recover_or_infer/config.py).
 
 ## Code map
 
