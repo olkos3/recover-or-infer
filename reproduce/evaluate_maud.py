@@ -9,7 +9,7 @@ intervals over documents (10,000 resamples, seed 42).
     python reproduce/evaluate_maud.py --archive path/to/legalbenchrag.zip                # the paper's 30 agreements
     python reproduce/evaluate_maud.py --archive path/to/legalbenchrag.zip --limit 3      # a quick check
 
-The paper's Table 2 used three-list fusion (dense + BM25 over breadcrumbs + BM25 over text), so that is the default
+The paper's Table 11 (App. B) used three-list fusion (dense + BM25 over breadcrumbs + BM25 over text), so that is the default
 here (--fusion three_list); --fusion dense runs the recommended dense + reranker configuration instead.
 """
 import argparse
@@ -26,7 +26,7 @@ from recover_or_infer import Config, OpenAIClient, StructureIndex, paginate
 
 HERE = Path(__file__).resolve().parent
 ARCHIVE_SHA256 = "27431be37db9b1db23f8ab790a42d076adb1f72d7f9e7562e36a10573405f88d"
-PAPER = {"flat": (48.4, 77.3), "toc": (61.4, 85.1), "no_toc": (59.2, 83.6)}   # Table 2 of the paper: R@2k, R@8k
+PAPER = {"flat": (48.4, 77.3), "toc": (61.4, 85.1), "no_toc": (59.2, 83.6)}   # Table 11 of the paper (App. B): R@2k, R@8k
 
 
 def strip_prefix(query):
@@ -97,7 +97,7 @@ def main():
     a.add_argument("--reranker-dir", default="models/jina_v2_base", help="downloaded on first use")
     a.add_argument("--no-rerank", action="store_true")
     a.add_argument("--fusion", default="three_list", choices=["three_list", "dense"],
-                   help="three_list (default) reproduces Table 2; dense is the recommended configuration (Table 7)")
+                   help="three_list (default) reproduces Table 11; dense is the recommended configuration (Table 3)")
     a.add_argument("--out", default="reproduce/maud_results.json")
     x = a.parse_args()
 

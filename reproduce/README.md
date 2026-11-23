@@ -41,7 +41,7 @@ The output gives the document-averaged recall of each method next to the paper's
 
 ## 4. What to expect
 
-The paper's values (Table 2) were measured with three-list fusion, which is the script's default (`--fusion three_list`). With `--fusion dense` the script runs the recommended dense + reranker configuration instead; compare that run with the MAUD-005 columns of the paper's Table 7. The paper's Table 2 values are:
+The paper's values (Table 11, in App. B) were measured with three-list fusion, which is the script's default (`--fusion three_list`). With `--fusion dense` the script runs the recommended dense + reranker configuration instead; compare that run with the MAUD-005 columns of the paper's Table 3. The paper's Table 11 values are:
 
 | Method | R@2k | R@8k |
 |---|---:|---:|
