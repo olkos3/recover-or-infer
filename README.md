@@ -23,7 +23,7 @@ Every route produces a section tree, and all feed the same retriever:
 - Chunks of at most 350 tokens respect section boundaries, after sections shorter than 150 tokens have been merged with a neighbour. Each chunk carries its **breadcrumb** (e.g. `ARTICLE VII EVENTS OF DEFAULT > Section 7.2 Grace Periods and Cure Rights`).
 - The breadcrumb is embedded together with the chunk text, so a chunk that starts mid-clause still carries the topic of its section.
 - Dense retrieval over *breadcrumb + text* takes the top 50 chunks, and a cross-encoder reranks them. This is the configuration the paper recommends (`Config.fusion = "dense"`, the default).
-- The paper's earlier frozen comparisons (all before its fifth credit holdout) instead fused three ranked lists by reciprocal rank fusion: dense, BM25 over breadcrumbs and BM25 over text. It is available as `Config(fusion="three_list")` and is what reproduces the paper's earlier tables; the paper's post-hoc and fresh-holdout results show the BM25 lists can be dropped.
+- The paper's earlier frozen comparisons (all before its fifth credit holdout) instead fused three ranked lists by reciprocal rank fusion: dense, BM25 over breadcrumbs and BM25 over text. It is available as `Config(fusion="three_list")` and is what reproduces the paper's earlier tables; in the paper's post-hoc and fresh-holdout results the BM25 lists gave no consistent benefit on the evaluated datasets.
 
 ```
 document ──► ToC found? ──yes──────────────────────► recover + align ToC ──┐
