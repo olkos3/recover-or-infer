@@ -7,3 +7,14 @@ authors:
 year: 2026
 repository-code: "https://github.com/olkos3/recover-or-infer"
 license: MIT
+preferred-citation:
+  type: article
+  title: "Recover or Infer: Training-Free Document Structure for Retrieval over Long Documents"
+  authors:
+    - family-names: Soroka
+      given-names: Vadym
+  year: 2026
+  publisher:
+    name: Zenodo
+  doi: "10.5281/zenodo.24514525"
+  url: "https://doi.org/10.5281/zenodo.24514525"
